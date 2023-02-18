@@ -1,0 +1,95 @@
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .hh{
+            text-align: center;
+            font-size:medium ;
+            font-weight: 100;
+            padding-right: 200px;
+            padding-left: 200px;
+        }
+        .hinh{
+            text-align: center;
+        }
+        .hi{
+            text-align: center;
+        }
+        .ha{
+            padding-left: 450px;
+            padding-right: 450px;
+            padding-bottom: 10px;
+        }
+        .hl{
+            padding-left: 300px;
+            box-sizing: border-box;
+            background-color: rgb(222, 214, 214);
+        } 
+        .he{
+            padding-left: 300px;
+            box-sizing: border-box;
+            background-color: rgb(212, 205, 205);
+        }
+        .vn{
+            background-color: rgb(227, 54, 54);
+            color: white;
+            font-variant-numeric: oldstyle-nums ;
+            text-shadow: 0 0 5px white;
+        }
+        h1{
+            padding-right: 20px;
+        }
+        header{
+            background-color: rgb(227, 54, 54);
+        }
+        .thu{
+            color: white;
+        } 
+        ul{
+            list-style: none;
+        }
+        .inner-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        ul#main-menu{
+            display: flex;
+        }
+        ul#main-menu a{
+            text-transform: uppercase;
+            padding: 10px 20px;
+            display: block;
+        }
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #vn{
+            color:#fff;
+            font-weight: bold;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+        }
+        #banner{
+            background-image: url(/img/newss.jpg);
+            min-height: 1000px;
+            width: 1500px;    
+        }
+        header.sticky{
+            background-color: rgb(227, 54, 54);
+            opacity: 0.9;
+        }
+        header.sticky #main-menu a{
+             color: white;
+        }
+        footer{
+            background-color: rgb(134, 124, 124);
+            padding-left: 1000px;
+            padding-top: 50px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 15px;
+        }
+
+        
+        

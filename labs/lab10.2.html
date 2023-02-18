@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Bai 2 - Lab 10</title>
+   <style>
+      .form-group {
+         margin: 10px 0px;
+      }
+
+      .form-control {
+         width: 98%;
+         padding: 5px;
+         outline: none;
+         border: 1px solid gray;
+         border-radius: 3px;
+      }
+
+      .form-group label {
+         font-weight: bold;
+         font-variant: small-caps;
+      }
+
+      .form-control:focus {
+         background-color: yellow;
+         box-shadow: 0 0 3px red;
+         border: 1px solid yellow;
+      }
+
+      .form-button {
+         padding: 8px 30px;
+         outline: none;
+         border: none;
+         border-radius: 20px;
+         font-weight: bold;
+         background-color: white;
+         color: orangered;
+         box-shadow: inset 0 0 20px blue;
+      }
+
+      .form-button:hover {
+         color: blue;
+         box-shadow: inset 0 0 20px gray;
+      }
+   </style>
+</head>
+
+<body>
+   <form>
+      <div class="form-group">
+         <label>
+            Họ và tên
+         </label>
+         <input type="text" class="form-control">
+      </div>
+      <fieldset>
+         <legend> Giới tính</legend>
+         <div class="form-group">
+            <input type="checkbox">Nam
+            <input type="checkbox">Nữ
+         </div>
+      </fieldset>
+      <div class="form-group">
+         <label>
+            Ngày sinh
+         </label>
+         <input class="form-control" type="date">
+      </div>
+      <div class="form-group">
+         <label>
+            Điểm:
+         </label>
+         <input class="form-control" type="number" min="0" max="10" step="0.25">
+      </div>
+      <div class="form-group">
+         <label>
+            Nghề nghiệp
+         </label>
+      </div>
+      <input class="form-control" list="mian">
+      <datalist id="mian">
+         <option value="Nông dân">
+         <option value="Ngân hàng">
+         <option value="IT (don't choice this)">
+         <option value="Công ty">
+         <option value="Nhà nước">
+      </datalist>
+      <div class="form-group">
+         <fieldset>
+            <legend>Sở thích</legend>
+            <label>
+               <input type="checkbox"> Thể thao
+               <input type="checkbox"> Du lịch
+               <input type="checkbox"> Âm nhạc
+               <input type="checkbox"> Ẩm thực
+            </label>
+         </fieldset>
+      </div>
+      <div class="form-group">
+         <label>
+            Ghi chú
+         </label>
+         <input class="form-control" type="text" tabindex="2">
+      </div>
+      <hr>
+      <div class="form-group">
+         <button class="form-button" disabled>Đăng kí</button>
+         <button class="form-button">Nhập lại</button>
+      </div>
+   </form>
+</body>
+
+</html>

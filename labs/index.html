@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASM 2 </title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .vmenu {
+            padding: 0px;
+            margin: 5px;
+            list-style: none;
+            border-radius: 3px;
+            box-shadow: 0 0 2px gray;
+        }
+
+        .vmenu a {
+            background: url('/img/icons8-shop-16.png    ') no-repeat 3px center;
+            display: block;
+            border-bottom: 1px dotted orangered;
+            color: red;
+            font-variant: small-caps;
+            font-size: larger;
+            text-decoration: none;
+            padding: 8px 5px 8px 30px;
+        }
+
+        .vmenu a:hover {
+            background: url('/img/icons8-den1.png') no-repeat 3px center;
+            border-bottom: 1px dotted white;
+            background-color: rgb(67, 64, 64);
+            color: white;
+        }
+
+        .menu a:hover {
+            color: red;
+            font-weight: bold;
+        }
+
+        .menu a {
+            color: white;
+            font-weight: 200;
+            text-decoration: none;
+            font-size: larger;
+            word-spacing: 2px;
+        }
+
+        .body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .search {
+            width: 100%;
+            position: relative;
+            display: flex;
+        }
+        .searchTerm {
+            width: 150px;
+            border: 3px solid orangered;
+            padding: 5px;
+            height: 20px;
+            border-radius: 5px 0 0 5px;
+            outline: none;
+            color: #908fb7;
+        }
+
+        .searchTerm:focus {
+            color:orangered;
+        }
+
+        .searchButton {
+            width: 70px;
+            height: 36px;
+            border: 1px solid rgb(67, 64, 64);
+            background: rgb(67, 64, 64);
+            text-align: center;
+            color: #fff;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .container {
+            position: relative;
+            max-width: 1980px;
+            margin: 0 auto;
+        }
+
+        .container>header {
+            background-image: url('/img/elephone-sale.webp');
+            background-size: 100% ;
+            height: 400px;
+        }
+
+        header {
+            position: relative;
+        }
+
+        header .top-right {
+            width: 300px;
+            height: 35px;
+            background-color: rgb(67, 64, 64);
+            position: absolute;
+            right: 0;
+            border-bottom-left-radius: 30px;
+            text-align: center;
+            font-variant: small-caps;
+            top: 0;
+        }
+
+        header .top-right a {
+            text-decoration: none;
+            color: white;
+            line-height: 35px;
+            padding: 5px;
+        }
+
+        header .top-right a:hover {
+            text-decoration: none;
+            color: red;
+            font-weight: bold;
+        }
+
+        header .company-info {
+            bottom: 30px;
+            left: 15px;
+            position: absolute;
+            width: 300px;
+            height: 100px;
+        }
+
+        header .company-info h1 {
+            margin: 0;
+            padding: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(248, 248, 248);
+            font-size: 37px;
+        }
+
+        header .company-info h3 {
+            margin: 0;
+            padding: 0;
+            font-family:Verdana, Geneva, Tahoma, sans-serif ;
+            color: rgb(249, 168, 168);
+            font-size: 20px;
+            letter-spacing: 3px;
+        }
+
+        .container>nav {
+            line-height: 40px;
+            background-color: rgb(67, 64, 64);
+            color: white;
+            text-align: center;
+            font-variant: small-caps;
+        }
+
+        .container>article {
+            min-height: 400px;
+            width: 75%;
+            background-color: white;
+            float: left;
+        }
+
+        .container>aside {
+            min-height: 400px;
+            width: 25%;
+            background-color: lightgray;
+            float: right;
+            font-size: larger;
+        }
+
+        .container>footer {
+            border-top: 5px double white;
+            color:white;
+            line-height: 50px;
+            background-color:rgb(67, 64, 64) ;
+            text-align: center;
+            font-variant: small-caps;
+            clear: both;
+        }
+
+        .container>nav>a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .container>nav>a:hover {
+            color: yellow;
+            text-decoration: underline;
+        }
+
+        iframe[name=page] {
+            width: 100%;
+            min-height: 400px;
+        }
+
+        .up input {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: small;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="wrap">
+                <form action="" class="search" method="post">
+                    <input type="text" class="searchTerm" value="Tìm kiếm">
+                </form>
+            </div>
+            <div class="top-right">
+                <a href="/thangnhn-ps28253/dangnhap.html">Đăng nhập</a>
+                <a href="/thangnhn-ps28253/dk.html">Đăng kí</a>
+                <a href="/thangnhn-ps28253/doimk.html">Đổi mật khẩu</a>
+            </div>
+            <div class="company-info">
+                <h1>MEGA SALE</h1>
+                <h3>Săn sale - Kiếm lời</h3>
+            </div>
+        </header>
+        <nav>
+            <div class="menu">
+                <a href="/labs/index.html">Trang chủ</a> &nbsp;&nbsp; &nbsp;
+                <a href="/about.html" target="page">Giới thiệu</a> &nbsp; &nbsp; &nbsp;
+                <a href="#">Liên hệ</a> &nbsp; &nbsp; &nbsp;
+                <a href="#">Góp ý</a> &nbsp; &nbsp; &nbsp;
+                <a href="#">Hỏi đáp</a>
+            </div>
+        </nav>
+        <article>
+            <iframe name="page" src="/home.html" scrolling="auto" frameborder="0"></iframe>
+        </article>
+        <aside>
+            <ul class="vmenu">
+                <li><a href="#">Máy tính xách tay</a></li>
+                <li><a href="#">Điện thoại di động</a></li>
+                <li><a href="#">Máy chụp ảnh</a></li>
+                <li><a href="#">Sạc dự phòng</a></li>
+                <li><a href="#">Đồng hồ điện tử</a></li>
+            </ul>
+        </aside>
+        <footer>
+            <p>Sale Shopping © 2017. All rights reserved</p>
+        </footer>
+    </div>
+</body>
+
+</html>
